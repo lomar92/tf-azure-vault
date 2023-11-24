@@ -10,13 +10,13 @@ variable "vault_namespace" {
     description = "Namespace of the Vault Cluster"  
 }
 
-variable "login_approle_role_id" {
-    description = "Login role for the vault approle"  
-}
+# variable "login_approle_role_id" {
+#     description = "Login role for the vault approle"  
+# }
 
-variable "login_approle_secret_id" {
-    description = "Secret id for the approle"  
-}
+# variable "login_approle_secret_id" {
+#     description = "Secret id for the approle"  
+# }
 
 variable "vault_azure_secret_backend_role" {
     description = "Role for getting creds from Azure"  
