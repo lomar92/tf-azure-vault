@@ -48,7 +48,7 @@ resource "random_string" "random" {
 }
 
 resource "azurerm_virtual_network" "example" {
-  name                = "nw-sreenath-${random_string.random.result}"
+  name                = "nw-lomar-${random_string.random.result}"
   resource_group_name = var.resource_group_name
   location            = "WestEurope"
   address_space       = ["10.0.0.0/16"]
