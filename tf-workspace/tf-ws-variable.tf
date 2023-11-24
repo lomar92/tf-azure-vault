@@ -3,8 +3,8 @@ resource "tfe_organization" "lomar" {
   email = "amar@hashicorp.com"
 }
 
-resource "tfe_workspace" "test" {
-  name         = "landing-zone"
+resource "tfe_workspace" "master" {
+  name         = "tf-azure-vault"
   organization = tfe_organization.lomar.name
 }
 
@@ -43,7 +43,6 @@ resource "tfe_variable" "vault_azure_secret_backend_role" {
   workspace_id = "ws-hC4yRRjYepNV2ADs"
 }
 
-# Fügen Sie für jede weitere Variable ähnliche Blöcke hinzu
 resource "tfe_variable" "vault_token" {
   key          = "vault_token"
   value        = "hvs-token"
@@ -51,5 +50,3 @@ resource "tfe_variable" "vault_token" {
   workspace_id = "ws-hC4yRRjYepNV2ADs"
   sensitive    = true
 }
-
-
