@@ -60,3 +60,5 @@ resource "azurerm_virtual_network" "example" {
 output "hello_world" {
   value = "Hello, World!"
 }
+
+## how to bring azure secrets/variables to other workspace, maybe with a variable set?

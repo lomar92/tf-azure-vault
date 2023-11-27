@@ -1,1 +1,3 @@
 azure.sh
+trigger_runs.py
+cancel-run.py
